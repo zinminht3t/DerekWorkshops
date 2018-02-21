@@ -8,9 +8,15 @@ namespace Workshop5b
 {
     class BankBranch
     {
-        string BranchName;
-        string BranchManager;
+        string branchName;
+        string branchManager;
         List<Account> accountLists;
+
+        public BankBranch(string branchname, string branchManager)
+        {
+            this.branchManager = branchManager;
+            this.branchName = branchname;
+        }
 
         public void AddAcount(Account account)
         {

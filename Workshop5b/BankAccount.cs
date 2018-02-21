@@ -89,7 +89,7 @@ namespace Workshop5b
         {
            Balance -= amount;
         }
-        public new double CalculateInterest()
+        public override double CalculateInterest()
         {
             if(Balance > 0)
             {
