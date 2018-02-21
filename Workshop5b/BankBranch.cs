@@ -40,7 +40,7 @@ namespace Workshop5b
             double total = 0;
             for (int i = 0; i < accountLists.Count; i++)
             {
-                if (accountLists[i].CalculateInterest() > 0)
+                if (accountLists[i].Balance > 0)
                     total += accountLists[i].CalculateInterest();
             }
             return total;
@@ -51,7 +51,7 @@ namespace Workshop5b
             double total = 0;
             for (int i = 0; i < accountLists.Count; i++)
             {
-                if (accountLists[i].CalculateInterest() < 0)
+                if (accountLists[i].Balance < 0)
                     total -= accountLists[i].CalculateInterest();
             }
             return total;
